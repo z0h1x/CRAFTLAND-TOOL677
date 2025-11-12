@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SSFYT Craftland Map Settings Editor</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Password Panel -->
+<div id="password-panel" class="overlay active">
+  <div class="password-box">
+    <h2>Welcome to SSFYT Craftland Map Settings editor website</h2>
+    <p>Please enter password</p>
+    <input type="password" id="password-input" autocomplete="off" />
+    <button id="password-submit">Enter</button>
+    <p id="password-error" class="error-msg"></p>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div id="main-content" class="hidden">
+
+  <header>
+    <div class="image-frame">
+      <img src="https://i.ibb.co/0pKrffb3/x.png" alt="SSFYT Logo" />
+      <div class="glow-circle"></div>
+    </div>
+    <h1>SSFYT</h1>
+  </header>
+
+  <section class="panel">
+    <h2>Craftland Map Settings</h2>
+
+    <label class="upload-label">
+      Upload <span class="highlight">ProjectData_slot .bytes</span> File
+      <input type="file" accept=".bytes" id="file-input" />
+    </label>
+
+    <div class="select-group">
+      <label for="teams-select">Select Number of Teams</label>
+      <select id="teams-select" aria-label="Select Number of Teams">
+        <!-- Options 1 to 12 -->
+      </select>
+    </div>
+
+    <div class="select-group">
+      <label for="players-select">Select Number of Players</label>
+      <select id="players-select" aria-label="Select Number of Players">
+        <!-- Options 1 to 12 -->
+      </select>
+    </div>
+
+    <div class="select-group">
+      <label for="rounds-select">Select Number of Rounds</label>
+      <select id="rounds-select" aria-label="Select Number of Rounds">
+        <!-- Options 1 to 20 -->
+      </select>
+    </div>
+
+    <button id="download-btn" disabled>Download</button>
+  </section>
+
+  <footer>
+    <p>© COPYRIGHT 2025 by <a href="https://youtube.com/@ssfyt_777?si=9JBqTAd9bgnNvT8F" target="_blank" id="footer-link">SSFYT</a></p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
